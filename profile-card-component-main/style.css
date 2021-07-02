@@ -67,19 +67,19 @@ main {
   margin-bottom: 18px;
 }
 
-.card h2 {
+.card h1 {
   font-weight: 700;
   font-size: 18px;
   color: #2d3248;
 }
 
-.card h2 span {
+.card h1 span {
   padding-left: 4px;
   font-weight: 400;
   color: #6a6f81;
 }
 
-.card h3 {
+.card h2 {
   color: #6a6f81;
   font-weight: 400;
   margin-top: 10px;
