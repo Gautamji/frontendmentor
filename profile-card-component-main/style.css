@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background: #19a2ae;
+  font-size: .9375rem;
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+  background-repeat: no-repeat, no-repeat;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.top-bg {
+  position: absolute;
+}
+
+.bottom-bg {
+  position: absolute;
+}
+
+.card {
+  margin: 24px;
+  background: white;
+  max-width: 22rem;
+  height: 23.5rem;
+  border-radius: 1.0625rem;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  -webkit-filter: drop-shadow(0 0 60px #6a6f81);
+          filter: drop-shadow(0 0 60px #6a6f81);
+}
+
+.card .cover {
+  height: auto;
+  width: 100%;
+}
+
+.card .profile-pic {
+  position: relative;
+  border-radius: 100%;
+  border: 5px solid white;
+  margin-top: -58px;
+  margin-bottom: 18px;
+}
+
+.card h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2d3248;
+}
+
+.card h2 span {
+  padding-left: 4px;
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+.card h3 {
+  color: #6a6f81;
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card .stats {
+  border-top: #dfdede solid 0.1px;
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+  padding: 24px;
+}
+
+.card .stats div {
+  font-size: 10px;
+  color: #969696;
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.card .stats div div {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #2d3248;
+  letter-spacing: normal;
+}
+/*# sourceMappingURL=style.css.map */
