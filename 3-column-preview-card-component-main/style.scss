@@ -94,6 +94,13 @@ width:100%;
     position: absolute;
     bottom: 3em;
     margin-top: 24px;
+     border: 1px white solid;
+    transition: all 0.2s;
+    &:hover{
+       
+        color:white;
+        background:transparent;
+    }
 
 
 }
