@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bright-orange {
+  background: #e38826;
+}
+
+.bright-orange button {
+  color: #e38826;
+}
+
+.dark-cyan {
+  background: #006970;
+}
+
+.dark-cyan button {
+  color: #006970;
+}
+
+.very-dark-cyan {
+  background: #004241;
+}
+
+.very-dark-cyan button {
+  color: #004241;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-size: .9375rem;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+main > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 57.5rem;
+  border-radius: .4375rem;
+  overflow: hidden;
+  margin: 1.5rem;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #f2f2f2;
+  margin: 32px 0 24px 0;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+}
+
+.card {
+  padding: 3rem;
+  min-height: 500px;
+  position: relative;
+  width: 100%;
+}
+
+.card .button {
+  background-color: #f2f2f2;
+  font-family: 'Lexend Deca', sans-serif;
+  border-radius: 25px;
+  padding: 1em 2em;
+  border: none;
+  font-size: 15px;
+  position: absolute;
+  bottom: 3em;
+  margin-top: 24px;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    min-height: 0;
+  }
+  .card .button {
+    position: relative;
+    bottom: 0;
+  }
+  main > section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 57.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: .4375rem;
+    overflow: hidden;
+  }
+}
+/*# sourceMappingURL=style.css.map */
