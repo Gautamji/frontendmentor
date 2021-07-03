@@ -89,6 +89,7 @@ main{
     }
     .button {
         display: flex;
+        color: $very-dark-grayish-blue;
         justify-content: space-between;
         img{
           object-fit: contain;
