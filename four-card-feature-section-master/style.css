@@ -19,6 +19,22 @@ body {
   background-color: #fafafa;
 }
 
+h1 {
+  color: #4c4e61;
+}
+
+h2 {
+  color: #4c4e61;
+}
+
+h3 {
+  color: #a3a5ae;
+}
+
+p {
+  color: #a3a5ae;
+}
+
 main {
   text-align: center;
   padding-inline: 3.2rem;
