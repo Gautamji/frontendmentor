@@ -97,6 +97,7 @@ body {
     flex: 1;
     background:$accent_clr;
     position: relative;
+    flex-shrink: 0;
     
     img{
          overflow: hidden;

@@ -84,6 +84,8 @@ body {
           flex: 1;
   background: #aa5cdb;
   position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .card-image img {
