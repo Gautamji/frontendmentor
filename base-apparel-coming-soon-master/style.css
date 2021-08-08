@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main {
+  height: 100%;
+}
+
+main h1 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  line-height: 42px;
+}
+
+main h1 span {
+  display: block;
+  font-weight: 400;
+}
+
+main h1 span:nth-child(1) {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+main p {
+  padding: 18px 32px;
+  font-size: 14px;
+  text-align: center;
+  color: #ce9797;
+  line-height: 21px;
+  color: #ce9797;
+}
+
+main header {
+  height: 84px;
+  padding: 32px;
+}
+
+main header img {
+  height: 22px;
+}
+
+main .hero img {
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  margin: 18px 32px;
+  position: relative;
+}
+
+.form input[type=email] {
+  border: none;
+  background-color: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 12px 0 14px 20px;
+  letter-spacing: 0.4px;
+  color: black;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.form input[type=email]::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+.form input[type=email]:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.form input[type=email]::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.form input[type=email]::placeholder {
+  color: #ce9797;
+}
+
+.form .error-icon {
+  display: none;
+}
+
+.form .info {
+  padding: 12px 0 14px 20px;
+  color: #f96262;
+}
+
+.form input[type=email]:focus {
+  outline: none;
+}
+
+.form .email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  border-radius: 24px;
+  border: 1px solid #ce9797;
+}
+
+.form .email-form:focus {
+  border: 1px solid #ce9797;
+  background-color: pink;
+}
+
+.form button {
+  border: none;
+  background-color: #f96262;
+  border-radius: 24px;
+  background-color: linear-gradient(135deg, from white, to #fff5f5);
+  height: 44px;
+  width: 62px;
+  text-align: center;
+}
+
+.hilite {
+  outline: 1px solid #f96262;
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main h1 {
+    margin-top: 0;
+    text-align: left;
+    font-size: 64px;
+    letter-spacing: 17.5px;
+    line-height: 68px;
+  }
+  main header {
+    height: auto;
+    margin-bottom: 25vh;
+    padding: 0;
+  }
+  main header img {
+    height: 33px;
+  }
+  main p {
+    padding: 25px 0;
+    font-size: 16px;
+    text-align: left;
+    line-height: 26px;
+    max-width: 45ch;
+  }
+  .container {
+    margin: 6.5rem 16.5rem;
+  }
+  .hero {
+    display: none;
+  }
+  picture {
+    height: 100%;
+  }
+  picture img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  .form {
+    margin: 1.8rem 0;
+    position: relative;
+  }
+  .form input[type=email] {
+    border: none;
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 12px 0 14px 20px;
+    letter-spacing: 0.4px;
+    color: black;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .form input[type=email]::-webkit-input-placeholder {
+    color: #ce9797;
+  }
+  .form input[type=email]:-ms-input-placeholder {
+    color: #ce9797;
+  }
+  .form input[type=email]::-ms-input-placeholder {
+    color: #ce9797;
+  }
+  .form input[type=email]::placeholder {
+    color: #ce9797;
+  }
+  .form .error-icon {
+    display: none;
+  }
+  .form .info {
+    padding: 12px 0 14px 20px;
+    color: #f96262;
+  }
+  .form input[type=email]:focus {
+    outline: none;
+  }
+  .form .email-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+    border-radius: 27px;
+    border: 1px solid #ce9797;
+  }
+  .form .email-form:focus {
+    border: 1px solid #ce9797;
+    background-color: pink;
+  }
+  .form button {
+    border: none;
+    background-color: #f96262;
+    border-radius: 27px;
+    background-color: linear-gradient(135deg, from white, to #fff5f5);
+    height: 54px;
+    width: 100px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
