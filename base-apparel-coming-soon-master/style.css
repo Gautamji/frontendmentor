@@ -13,6 +13,8 @@ html {
 
 body {
   height: 100vh;
+  background-image: url("./images/bg-pattern-desktop.svg"), linear-gradient(135deg, white, #fff5f5);
+  background-size: cover, cover;
 }
 
 footer {
@@ -135,10 +137,15 @@ main .hero img {
   border: none;
   background-color: #f96262;
   border-radius: 24px;
-  background-color: linear-gradient(135deg, from white, to #fff5f5);
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   height: 44px;
   width: 62px;
   text-align: center;
+}
+
+.form button:hover {
+  -webkit-box-shadow: 5px 5px 10px #ce9797;
+          box-shadow: 5px 5px 10px #ce9797;
 }
 
 .hilite {
@@ -177,7 +184,10 @@ main .hero img {
     max-width: 45ch;
   }
   .container {
-    margin: 6.5rem 16.5rem;
+    padding: 6.5rem 16.5rem;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .hero {
     display: none;
@@ -244,9 +254,7 @@ main .hero img {
   }
   .form button {
     border: none;
-    background-color: #f96262;
     border-radius: 27px;
-    background-color: linear-gradient(135deg, from white, to #fff5f5);
     height: 54px;
     width: 100px;
     text-align: center;

@@ -5,8 +5,8 @@ $SoftRed:hsl(0,93%,68%);
 
 $DarkGrayishRed: hsl(0, 6%, 24%);
 
-$gradient1:linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
-$gradient2:linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+$gradient1:linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$gradient2:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
 *, *::before, *::after{
     padding:0;
@@ -20,6 +20,10 @@ html{
 }
 body{
     height: 100vh;
+     background-image: url("./images/bg-pattern-desktop.svg"),
+     $gradient1;
+     background-size: cover,
+     cover;
 }
 footer{
     position: relative;
@@ -29,6 +33,7 @@ footer{
 }
 main{
     height:100%;
+  
     h1 {
         margin-top: 60px;
         text-align: center;
@@ -129,17 +134,20 @@ main{
         border: none;
         background-color: $SoftRed;
         border-radius: 24px;
-        background-color: $gradient1;
+        background-image: $gradient2;
         height: 44px;
         width: 62px;
         text-align: center;
+    }
+    button:hover{
+       box-shadow: 5px 5px 10px $DesaturatedRed;
     }
 }
 .hilite{
     outline: 1px solid $SoftRed;
 
 }
-
+ 
 @media screen and (min-width:500px) {
     main{
         display: flex;
@@ -177,7 +185,9 @@ main{
 
     }
     .container{
-        margin: 6.5rem 16.5rem;
+        padding: 6.5rem 16.5rem;
+        flex-grow: 1;
+      
     }
     .hero{
         display: none;
@@ -244,9 +254,7 @@ main{
 
         button {
             border: none;
-            background-color: $SoftRed;
             border-radius: 27px;
-            background-color: $gradient1;
             height: 54px;
             width: 100px;
             text-align: center;
