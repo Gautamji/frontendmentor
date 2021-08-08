@@ -20,10 +20,7 @@ html{
 }
 body{
     height: 100vh;
-     background-image: url("./images/bg-pattern-desktop.svg"),
-     $gradient1;
-     background-size: cover,
-     cover;
+    
 }
 footer{
     position: relative;
@@ -45,6 +42,7 @@ main{
         span {
             display: block;
             font-weight: 400;
+            color: $DarkGrayishRed;
         }
 
         span:nth-child(1) {
@@ -63,7 +61,6 @@ main{
     }
 
     header {
-        height: 84px;
         padding: 32px;
 
         img {
@@ -82,7 +79,12 @@ main{
 }
 
 
-
+.container{
+     background-image: url("./images/bg-pattern-desktop.svg"),
+     $gradient1;
+     background-size: cover,
+     cover;
+}
 .form{
     margin: 18px 32px;
     position: relative;
@@ -164,9 +166,7 @@ main{
           }
 
           header {
-              height: auto;
-              margin-bottom: 25vh;
-              padding: 0;
+              padding: 66px 0 130px 0;
 
               img {
                   height: 33px;
@@ -185,9 +185,18 @@ main{
 
     }
     .container{
-        padding: 6.5rem 16.5rem;
-        flex-grow: 1;
+        padding: 0 16.5rem;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+     
       
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        
+
     }
     .hero{
         display: none;
