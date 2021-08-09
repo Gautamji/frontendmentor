@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$Paleblue:hsl(225,100%,94%);
+$Brightblue:hsl(245,75%,52%);
+
+$Verypaleblue:hsl(225,100%,98%);
+$Desaturatedblue:hsl(224,23%,55%);
+$Darkblue:hsl(223,47%,23%);
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+     height: 100%;
+      font-family: 'Red Hat Display',
+      sans-serif;
+}
+body{
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: $Paleblue;
+    display:grid;
+    font-size: 1.6rem;
+    height: 100%;
+}
+
+main{
+    box-shadow: 5px 5px 20px $Desaturatedblue;
+    background-color: white;
+    place-self: center;
+    max-width: 452px;
+   
+    margin: 24px;
+    
+    border-radius: 20px;
+    overflow: hidden;
+    > img{
+        width:100%;
+    }
+    h1{
+          
+           text-align: center;
+           font-size: 23px;
+           margin-top: 28px;
+           color: $Darkblue;
+
+    }
+
+    >p{
+          
+           text-align: center;
+           font-size: 1.52rem;
+           margin: 17px 38px;
+           line-height: 24px;
+            color: $Desaturatedblue;
+    }
+
+    .selected-plan{
+        background-color: $Verypaleblue;
+        padding:20px 16px;
+        border-radius: 10px;
+        display: flex;
+         margin: 20px 25px;
+         align-items: center;
+         h2{
+            font-size: 1.45rem;
+            line-height: 25px;
+             color: $Darkblue;
+         }
+         p{
+            font-size: 1.45rem;
+            color: $Desaturatedblue;
+         }
+         >img{
+            margin-right: 18px;
+         }
+         >div{
+             flex-grow: 1;
+         }
+    }
+    .payment-link{
+        display: block;
+        background-color: $Brightblue;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        padding:15px;
+        margin: 22px 25px;
+        
+        text-align: center;
+    }
+    .cancel-link{
+        display: block;
+        text-decoration: none;
+        color: $Darkblue;
+        text-align: center;
+        margin: 20px 25px 32px;
+        font-weight: 700;
+        
+    }
+    .change-plan-link{
+        font-size: 13px;
+        display: block;
+        text-decoration: none;
+        color: $Brightblue;
+        padding-top: 5px;
+    }
+     
+
+}
+footer{
+    position:absolute;
+    bottom: 0;
+    text-align: center;
+    justify-self: center;
+}
+
+@media screen and (min-width:1440px){
+  main {
+      margin: 24px;
+
+      h1 {
+          font-size: 29px;
+          margin-top: 40px;
+      }
+
+      >p {
+          font-size: 1.6rem;
+          margin: 17px 55px;
+          line-height: 26px;
+      }
+
+      .selected-plan {
+          padding: 18px 24px;
+          margin: 20px 50px;
+
+          h2 {
+              font-size: 1.65rem;
+              line-height: 32px;
+          }
+
+          p {
+              font-size: 1.7rem;
+          }
+
+          >img {
+              margin-right: 18px;
+          }
+      }
+
+      .payment-link {
+       
+          border-radius: 10px;
+          padding: 15px;
+          margin: 38px 49px 30px;
+      }
+
+      .cancel-link {
+       
+          margin: 0px 19px 32px;
+      }
+
+      .change-plan-link {
+          font-size: 14px;
+         
+          padding-top: 5px;
+      }
+  }
+
+}

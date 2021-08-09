@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  display: -ms-grid;
+  display: grid;
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+main {
+  -webkit-box-shadow: 5px 5px 20px #7280a7;
+          box-shadow: 5px 5px 20px #7280a7;
+  background-color: white;
+  place-self: center;
+  max-width: 452px;
+  margin: 24px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+main > img {
+  width: 100%;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 23px;
+  margin-top: 28px;
+  color: #1f2f56;
+}
+
+main > p {
+  text-align: center;
+  font-size: 1.52rem;
+  margin: 17px 38px;
+  line-height: 24px;
+  color: #7280a7;
+}
+
+main .selected-plan {
+  background-color: #f5f7ff;
+  padding: 20px 16px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .selected-plan h2 {
+  font-size: 1.45rem;
+  line-height: 25px;
+  color: #1f2f56;
+}
+
+main .selected-plan p {
+  font-size: 1.45rem;
+  color: #7280a7;
+}
+
+main .selected-plan > img {
+  margin-right: 18px;
+}
+
+main .selected-plan > div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main .payment-link {
+  display: block;
+  background-color: #3829e0;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 22px 25px;
+  text-align: center;
+}
+
+main .cancel-link {
+  display: block;
+  text-decoration: none;
+  color: #1f2f56;
+  text-align: center;
+  margin: 20px 25px 32px;
+  font-weight: 700;
+}
+
+main .change-plan-link {
+  font-size: 13px;
+  display: block;
+  text-decoration: none;
+  color: #3829e0;
+  padding-top: 5px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    margin: 24px;
+  }
+  main h1 {
+    font-size: 29px;
+    margin-top: 40px;
+  }
+  main > p {
+    font-size: 1.6rem;
+    margin: 17px 55px;
+    line-height: 26px;
+  }
+  main .selected-plan {
+    padding: 18px 24px;
+    margin: 20px 50px;
+  }
+  main .selected-plan h2 {
+    font-size: 1.65rem;
+    line-height: 32px;
+  }
+  main .selected-plan p {
+    font-size: 1.7rem;
+  }
+  main .selected-plan > img {
+    margin-right: 18px;
+  }
+  main .payment-link {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 38px 49px 30px;
+  }
+  main .cancel-link {
+    margin: 0px 19px 32px;
+  }
+  main .change-plan-link {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

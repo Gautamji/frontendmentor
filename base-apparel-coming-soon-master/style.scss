@@ -41,7 +41,7 @@ main{
 
         span {
             display: block;
-            font-weight: 400;
+            font-weight: 600;
             color: $DarkGrayishRed;
         }
 
@@ -219,16 +219,18 @@ main{
             background-color: transparent;
             font-family: 'Josefin Sans',
                 sans-serif;
-            padding: 12px 0 14px 20px;
+            padding: 12px 0 12px 30px;
             letter-spacing: 0.4px;
 
-            color: black;
+            color: $DarkGrayishRed;
             flex-grow: 1;
+            font-size: 17px;
 
 
 
             &::placeholder {
                 color: $DesaturatedRed;
+                 font-size: 17px;
             }
 
         }
