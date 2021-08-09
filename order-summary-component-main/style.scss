@@ -21,7 +21,7 @@ html{
 }
 body{
     background-image: url("./images/pattern-background-mobile.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-color: $Paleblue;
     display:grid;
     font-size: 1.6rem;
@@ -29,7 +29,7 @@ body{
 }
 
 main{
-    box-shadow: 5px 5px 20px $Desaturatedblue;
+    box-shadow: 0px 0px 50px $Desaturatedblue;
     background-color: white;
     place-self: center;
     max-width: 452px;
@@ -96,7 +96,8 @@ main{
     .cancel-link{
         display: block;
         text-decoration: none;
-        color: $Darkblue;
+        color: $Desaturatedblue;
+        font-weight: 700;
         text-align: center;
         margin: 20px 25px 32px;
         font-weight: 700;
@@ -120,6 +121,10 @@ footer{
 }
 
 @media screen and (min-width:1440px){
+    body{
+          background-image: url("./images/pattern-background-desktop.svg");
+          background-repeat: repeat-x;
+    }
   main {
       margin: 24px;
 
